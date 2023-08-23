@@ -44,12 +44,7 @@ class Bot(Client):
 
 #Bot().run()
 if __name__ == "__main__":
-    import asyncio
+    bot = Bot()
+    bot.run()
 
-    async def main():
-        bot = Bot()
-        await bot.start()
-        await bot.idle()
-
-    asyncio.run(main())
             
