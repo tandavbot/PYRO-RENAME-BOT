@@ -43,12 +43,13 @@ class Bot(Client):
                 print("Pʟᴇᴀꜱᴇ Mᴀᴋᴇ Tʜɪꜱ Iꜱ Aᴅᴍɪɴ Iɴ Yᴏᴜʀ Lᴏɢ Cʜᴀɴɴᴇʟ")
 
 #Bot().run()
-async def main():
-    bot = Bot()
-    await bot.start()
-    await bot.idle()
-
 if __name__ == "__main__":
     import asyncio
+
+    async def main():
+        bot = Bot()
+        await bot.start()
+        await bot.idle()
+
     asyncio.run(main())
-    
+            
