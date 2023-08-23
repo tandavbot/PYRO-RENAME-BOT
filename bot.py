@@ -5,6 +5,7 @@ from pyrogram.raw.all import layer
 from config import Config
 from aiohttp import web
 from route import web_server
+import asyncio
 
 class Bot(Client):
 
@@ -43,8 +44,16 @@ class Bot(Client):
                 print("Pʟᴇᴀꜱᴇ Mᴀᴋᴇ Tʜɪꜱ Iꜱ Aᴅᴍɪɴ Iɴ Yᴏᴜʀ Lᴏɢ Cʜᴀɴɴᴇʟ")
 
 #Bot().run()
+#if __name__ == "__main__":
+    #bot = Bot()
+    #bot.run()
+
 if __name__ == "__main__":
-    bot = Bot()
-    bot.run()
+    async def main():
+        bot = Bot()
+        await bot.start()
+
+    asyncio.run(main())
+    
 
             
