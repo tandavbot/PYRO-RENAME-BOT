@@ -42,4 +42,13 @@ class Bot(Client):
             except:
                 print("Pʟᴇᴀꜱᴇ Mᴀᴋᴇ Tʜɪꜱ Iꜱ Aᴅᴍɪɴ Iɴ Yᴏᴜʀ Lᴏɢ Cʜᴀɴɴᴇʟ")
 
-Bot().run()
+#Bot().run()
+async def main():
+    bot = Bot()
+    await bot.start()
+    await bot.idle()
+
+if __name__ == "__main__":
+    import asyncio
+    asyncio.run(main())
+    
